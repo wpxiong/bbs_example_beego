@@ -1,0 +1,15 @@
+
+<div class="col-md-6">
+	<form action="/user/login" method="post" accept-charset="utf-8">
+		<div class="form-group">
+			<label>ユーザ名</label><input name="username" class="form-control" required="required"></input>
+			{{.usernameErr}}
+		</div>
+		<div class="form-group">
+			<label>パスワード</label><input name="password" class="form-control" required="required"></input>
+			{{.passwordErr}}
+		</div>
+		{{.passErr}}
+		<input class="btn btn-primary" type="submit" value="ログイン"/>
+	</form>
+</div>
